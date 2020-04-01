@@ -185,3 +185,6 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
+
+# run redshift at startup
+exec_always --no-startup-id redshift-gtk

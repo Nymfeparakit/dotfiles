@@ -1,0 +1,10 @@
+options=("Shutdown" "Reboot")
+choosed_option=$(echo -e "${options[0]}\n${options[1]}" | dmenu -i -p "Choose an option")
+if [[ $choosed_option == ${options[0]} ]]; then
+	shutdown -h now
+elif [[ $choosed_option == ${options[1]} ]]; then
+	shutdown -r now
+else
+	echo "Nothing"
+fi
+

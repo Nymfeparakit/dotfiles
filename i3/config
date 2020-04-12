@@ -141,7 +141,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # open nautulus at FM workspace
-assign [class="Nautilus"] → $workspace3
+#assign [class="Nautilus"] → $workspace3
 
 #Assume you are on workspace "1: www" and switch to "2: IM" using mod+2 because somebody sent you a message. You don’t need to remember where you came from now, you can just press $mod+2 again to switch back to "1: www".
 workspace_auto_back_and_forth yes
@@ -201,3 +201,5 @@ exec i3-config-wizard
 exec_always --no-startup-id redshift-gtk
 
 exec firefox
+
+bindsym $mod+Shift+x exec /usr/bin/poweroff_or_reboot 

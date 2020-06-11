@@ -18,3 +18,19 @@ Plugin 'morhetz/gruvbox' " color scheme
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+syntax on
+colorscheme gruvbox
+
+set showtabline=2 " show tabs line all of the time
+nmap ,n <Esc>:tabnew<CR>
+nmap ,x <Esc>:tabclose<CR>
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+set number " show line numbers

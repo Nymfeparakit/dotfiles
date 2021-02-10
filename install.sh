@@ -6,5 +6,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # linking config files
 rm ~/.config/i3/config;
+mkdir -p ~/.config/i3;
 ln -s ~/dotfiles/i3/config ~/.config/i3/config;
 ln -s ~/dotfiles/.vimrc ~/.vimrc
